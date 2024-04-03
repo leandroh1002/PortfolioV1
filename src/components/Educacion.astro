@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Marzo 2022 - Actualmente...",
+    title: "Tecnicatura Universitaria en Desarrollo y Calidad de Software",
+    company: "Universidad del Norte Santo Tomas de Aquino",
+    description:
+      "El técnico en desarrollo y calidad de software será capaz de: – Participar eficientemente en proyectos de software, contando con conocimientos sólidos para el desempeño de puestos específicos dentro del mismo. – Colaborar con el desarrollo, implementación y mantenimiento productos de software. – Colaborar en la evaluación y selección del software basados en los requerimientos del negocio. – Comprender los fundamentos de la administración de un proyecto de software. – Responder a los cambios de contexto con un conocimiento adecuado sobre la naturaleza del hombre como persona, trabajando en equipo interdisciplinarios. – Abordar las nuevas tecnologías con responsabilidad ético social.",
+    // link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Julio 2023 - Febrero 2024",
+    title: "Desarrollador FullStack",
+    company: "Henry Bootcamp",
+    description:
+      "Complete exitosamente la carreda de Desarrollo Full Stack con +800 Horas de cursada, demostrando domnio en tecnologías cy herramientas tales como HTML, CSS, JavaScript, React, Node.js Express y bases de datos.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

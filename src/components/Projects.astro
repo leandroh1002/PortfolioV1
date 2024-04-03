@@ -1,46 +1,81 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
+import Node from "./icons/Node.astro"
+import Redux from "./icons/Redux.astro"
+import Postgres from "./icons/Postgres.astro"
+import Javascript from "./icons/Javascript.astro"
+import HTML5 from "./icons/HTML5.astro"
+import CSS3 from "./icons/CSS3.astro"
+import SASS from "./icons/SASS.astro"
 import React from "./icons/React.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import Express from "./icons/Express.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
-
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  REDUX: {
+    name: "Redux",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: Redux,
   },
   REACT: {
     name: "React",
     class: "bg-black text-white",
     icon: React,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  NODE: {
+    name: "Node",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: Node,
+  },
+  POSTGRES: {
+    name: "Postgres",
+    class: "bg-[#003159] text-white",
+    icon: Postgres,
+  },
+  EXPRESS: {
+    name: "Express",
+    class: "bg-black text-white",
+    icon: Express,
+  },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-black text-white",
+    icon: Javascript,
+  },
+  CSS3: {
+    name: "CSS",
+    class: "bg-[#003159] text-white",
+    icon: CSS3,
+  },
+  SASS: {
+    name: "SASS",
+    class: "bg-black text-white",
+    icon: SASS,
+  },
+  HTML5: {
+    name: "HTML5",
+    class: "bg-[#003159] text-white",
+    icon: HTML5,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "CareWithLove",
     description:
       "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
     link: "https://proyecto-final-front-ashy.vercel.app/",
     github: "https://github.com/leandroh1002/proyecto-final-front",
     image: "/projects/Final.webp",
-    tags: [TAGS.REACT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.HTML5, TAGS.JAVASCRIPT, TAGS.SASS, TAGS.EXPRESS, TAGS.POSTGRES, TAGS.NODE, TAGS.REDUX],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Countries",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
     link: "https://countriesfront-whlz.onrender.com/",
     github: "https://github.com/leandroh1002/cr-pi-countries-main",
     image: "/projects/Individual.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.HTML5, TAGS.JAVASCRIPT, TAGS.CSS3, TAGS.EXPRESS, TAGS.POSTGRES, TAGS.NODE, TAGS.REDUX],
   },
 ]
 ---
@@ -60,7 +95,7 @@ const PROJECTS = [
       {title}
     </h3>
     <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
+      <ul class="flex flex-row mb-2 gap-x-2 flex-wrap">
           {tags.map((tag) => (
             <li>
               <span
@@ -79,7 +114,6 @@ const PROJECTS = [
             <LinkButton href={github}>
               <GitHub class="size-6" />
               Code
-              
             </LinkButton>
           )}
           {link && (

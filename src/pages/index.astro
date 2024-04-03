@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro"
 
 import AboutMe from "@/components/AboutMe.astro"
+import Education from "@/components/icons/Education.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
 import CodeIcon from "@/components/icons/Code.astro"
 import Experience from "@/components/Experience.astro"
@@ -9,6 +10,7 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Projects from "@/components/Projects.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
+import Educacion from "@/components/Educacion.astro"
 ---
 
 <Layout
@@ -22,15 +24,6 @@ import Hero from "@/components/Hero.astro"
     </Hero>
     </SectionContainer>
     <div class="space-y-24">
-    <!-- <SectionContainer id="experiencia">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </h2>
-      <Experience />
-    </SectionContainer> -->
 
     <SectionContainer id="proyectos">
       <h2
@@ -40,6 +33,16 @@ import Hero from "@/components/Hero.astro"
         Proyectos
       </h2>
       <Projects />
+    </SectionContainer>
+
+      <SectionContainer id="educacion">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Education class="size-8" />
+        Educación
+      </h2>
+      <Educacion />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">

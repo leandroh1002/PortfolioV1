@@ -1,6 +1,7 @@
 ---
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
+import React from "./icons/React.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
@@ -10,6 +11,11 @@ const TAGS = {
     name: "Next.js",
     class: "bg-black text-white",
     icon: NextJS,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: React,
   },
   TAILWIND: {
     name: "Tailwind CSS",
@@ -22,17 +28,18 @@ const PROJECTS = [
     title: "SVGL - A beautiful library with SVG logos",
     description:
       "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    link: "https://proyecto-final-front-ashy.vercel.app/",
+    github: "https://github.com/leandroh1002/proyecto-final-front",
+    image: "/projects/Final.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
+    link: "https://countriesfront-whlz.onrender.com/",
+    github: "https://github.com/leandroh1002/cr-pi-countries-main",
+    image: "/projects/Individual.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
